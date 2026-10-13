@@ -1,0 +1,24 @@
+{
+  "name": "balloon-portfolio-concept",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "lint": "eslint src tests scripts && html-validate index.html",
+    "test": "node --test tests/booking.test.js",
+    "test:e2e": "playwright test",
+    "licenses": "node scripts/licenses.js"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.56.0",
+    "eslint": "^10.12.0",
+    "html-validate": "^10.0.0",
+    "lighthouse": "^13.0.0",
+    "prettier": "^3.9.10",
+    "vite": "^7.1.9"
+  }
+}
